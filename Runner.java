@@ -1,4 +1,4 @@
-public class Runner implements PrintQuotient, PerfectSquare{
+public class Runner {
 
     public static void main (String[]args) {
     	printQuotient(7, 2);
@@ -17,5 +17,16 @@ public class Runner implements PrintQuotient, PerfectSquare{
 	        }
 	    return false;
     }
+
+    public static interface PerfectSquare{
+	    public static boolean perfectSquare(int a){
+	    	return false;
+	    }
+	}
+
+	public static interface PrintQuotient {
+		public static void printQuotient(float a, float b){}
+	}
     
 }
+
